@@ -9,9 +9,20 @@
 
 <header>
     <section class="top-bar">
-        <div class="logo">
-            Logo
-        </div>
+
+         <div class="container">
+            <div class="logo">
+<?php 
+if(has_custom_logo()){
+    the_custom_logo();
+}else{
+
+?>
+
+} 
+            </div>
+         </div>
+
         <div class="searchbox">
             Search Box
         </div>

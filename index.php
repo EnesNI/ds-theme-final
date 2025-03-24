@@ -1,4 +1,5 @@
 <?php get_header();  ?>
+<img src="<?php header_image(); ?>" height = "<?php  echo_costum_header() -> height; ?>" width="<?php echo get_costum_header() -> width; ?>" alt=""/> s
 
 <!---->
 
@@ -20,6 +21,7 @@
                                 ?>
                                 <article>
                                     <h2><?php the_title(); ?></h2>
+                                    <?php the_post_thumbnail(array(275, 275));  ?>
                                     <div class="meta-info">
                                         <p>posted in <?php echo get_the_date(); ?> By <?php  the_author_posts_link(); ?></p>
                                         <p>Categories: <?php the_category(''); ?></p>
